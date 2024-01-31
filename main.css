@@ -10,7 +10,8 @@ header{
 }
 
 h2{
-    margin: 15px 10px 10px 10px;
+    margin: 15px;
+    margin-bottom: 35px;
 }
 
 div {
@@ -19,22 +20,41 @@ margin: 100px;
 }
 
 form input {
-margin: 10px;
 width: 35%;
 padding: 12px 20px;
-margin: 8px 0;
 box-sizing: border-box;
 }
 
+#PrimeiroValor {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+#SegundoValor {
+    margin: 10px 5px;
+}
+
 form button {
-padding: 10px;
-margin-bottom: 15px;
-background-color: rgb(76, 163, 76);
-color: beige;
-font-family: Arial, Helvetica, sans-serif;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: rgb(211, 221, 166);
 }
+
+section p {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+
+}
+
 
