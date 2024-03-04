@@ -1,28 +1,24 @@
-form = document.getElementById('form-validacao')
+$(document).ready(function(){
+    $('form').on('submit', function(e){
+        e.preventDefault();
+
+        const nomeDaAtividade = $('input').val();
+        const novaAtividade = $(`<li>${nomeDaAtividade}</li>`)
+
+        $(novaAtividade).appendTo('ul')
+        $('input').val('')
+    })
 
 
-let campo1 = document.getElementById('PrimeiroValor')
-let campo2 = document.getElementById('SegundoValor')
+    $('ul').on('click', 'li', function(e){
+        e.preventDefault();
 
-function myFunction(campo1,campo2){
-    return campo2 > campo1
-}
-
-form.addEventListener('submit', function(e){
+        $(this).toggleClass('CortarAtividade')
 
 
-    const primeiroCampo = document.getElementById('PrimeiroValor');
-    const segundoCampo = document.getElementById('SegundoValor');
+    })
 
-    if (myFunction(primeiroCampo.value,segundoCampo.value)) {
-        alert('Formulario Valido, o valor é maior.')
-    }
-    else(
-        alert('Formulario Invalido, o valor é diferente.')
-    )
+
+
 
 })
-
-
-
-console.log(form);
